@@ -1,0 +1,302 @@
+* {
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ececec;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  background-color: #ffffff;
+  position: fixed;
+}
+nav #title {
+  background-color: transparent;
+  margin-left: 5%;
+}
+nav #title a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  height: 100%;
+  width: 100%;
+  padding: 3px;
+}
+nav .profile {
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+nav .profile img {
+  width: 20%;
+  height: auto;
+  border-radius: 15px;
+  max-width: 30px;
+}
+nav .profile a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+}
+nav .profile a img {
+  width: 20%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .dashboard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+  height: 80vh;
+}
+main .dashboard .nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .dashboard .nav div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 5%;
+}
+main .dashboard .nav div img {
+  width: 90%;
+  height: auto;
+  max-width: 50px;
+}
+main .dashboard .nav div:nth-of-type(2) {
+  font-size: 16px;
+  color: #F1A767;
+  font-style: italic;
+}
+main .divc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+}
+main .divc div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+  height: 15em;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #14b943, #c4c715);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20%;
+}
+main .divc div span {
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+}
+main .divc div:nth-of-type(2) {
+  background: linear-gradient(45deg, #ff9966, #ffcc99);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main .divc div:nth-of-type(3) {
+  background: linear-gradient(135deg, #4ecdc4, #2b80ff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 2%;
+}
+main .tablec {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(45deg, #66ff73, #ffcc99);
+  width: 100%;
+  height: fit-content;
+  border-radius: 15px;
+  margin-right: 2%;
+  margin-bottom: 20%;
+}
+main .tablec table {
+  width: 100%;
+  text-align: center;
+}
+main .tablec table thead th {
+  padding: 10px;
+}
+main .tablec table tbody tr td {
+  padding: 10px 0;
+}
+main .tablec table tbody tr td a {
+  text-decoration: none;
+  font-weight: 400;
+}
+main .tablec table tbody tr td a:hover {
+  font-weight: 600;
+}
+main .tablec table tbody tr td a:nth-of-type(1) {
+  color: rgb(52, 173, 230);
+  margin-right: 10%;
+}
+main .tablec table tbody tr td a:nth-of-type(2) {
+  color: rgb(241, 38, 38);
+}
+main .tablec table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1294117647);
+}
+main .formc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 30%;
+}
+main .formc form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  height: fit-content;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+main .formc form h1 {
+  margin-bottom: 5%;
+}
+main .formc form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+  height: fit-content;
+  padding: 3px;
+}
+main .formc form div label {
+  margin-bottom: 3%;
+  font-weight: 500;
+}
+main .formc form div input {
+  margin-bottom: 7%;
+}
+main .formc form div input[type=text], main .formc form div input[type=email] {
+  padding: 2px 5px;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  border: solid 1px rgb(207, 207, 207);
+}
+main .formc form div input[type=text]:focus, main .formc form div input[type=email]:focus {
+  border: solid 1px #47e654;
+  outline: none;
+}
+main .formc form button {
+  all: unset;
+  background: linear-gradient(45deg, #66ff73, #99ffaa);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+main .pending {
+  width: 95%;
+  height: fit-content;
+  padding: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30%;
+}
+main .pending form {
+  width: 20%;
+  height: fit-content;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+}
+main .pending form img {
+  max-width: 50%;
+  height: auto;
+}
+main .pending form div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .pending form div label {
+  margin: 3%;
+  font-weight: bolder;
+}
+main .pending form div input {
+  width: 90%;
+  border: none;
+  margin: 5% 0;
+  padding-left: 5px;
+}
+main .pending form select {
+  width: 100%;
+  height: 25px;
+  margin: 5%;
+  background-color: transparent;
+}
+main .pending form button {
+  all: unset;
+  background: linear-gradient(45deg, #66ff73, #99ffaa);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,255 @@
+@use 'header';
+
+$primary_colour:#3E84EE;
+$secondary_colour:#F1A767;
+$accent_colour:#F65E5E;
+$bg:#ececec;
+$grey_bg:#B2B2B2;
+$font:16px;
+
+@mixin flex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex_col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+main{
+    @include flex_row();
+
+    .dashboard{
+        @include flex_col();
+        width:78%;
+        height:80vh;
+
+        .nav{
+            @include flex_row();
+            width:100%;
+
+            div{
+                @include flex_row();
+                margin-right: 5%;
+
+                img{
+                    width:90%;
+                    height: auto;
+                    max-width: 50px;
+
+                }
+            }
+            
+            div:nth-of-type(2){
+                font-size: 16px;
+                color:#F1A767;
+                font-style: italic
+            }
+        }
+    }
+
+    .divc{
+        @include flex_row();
+        height: fit-content;
+        width:100%;
+
+        div{
+            @include flex_col();
+            justify-content: space-around;
+            width:30%;
+            height:15em;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #14b943, #c4c715);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20%;
+
+            span{
+                font-weight: 600;
+                font-size: 22px; 
+                color: #ffffff;                
+            }
+        }
+
+        div:nth-of-type(2){
+            background: linear-gradient(45deg, #ff9966, #ffcc99);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        div:nth-of-type(3){
+            background: linear-gradient(135deg, #4ecdc4, #2b80ff);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 2%;
+        }
+    }
+
+    .tablec{
+        @include flex_col();
+        background: linear-gradient(45deg, #66ff73, #ffcc99);
+        width: 100%;
+        height:fit-content;
+        border-radius: 15px;
+        margin-right: 2%;
+        margin-bottom: 20%;
+        
+        table{
+            width:100%;
+            text-align: center;
+            
+            thead{      
+                th{
+                    padding: 10px;
+                }
+            }
+
+            tbody{
+                tr{
+                    td{
+                        padding: 10px 0;
+                        a{
+                            text-decoration: none;
+                            font-weight: 400;
+                        }
+                        a:hover{
+                            font-weight: 600;
+                        }
+                        a:nth-of-type(1){
+                            color:rgb(52, 173, 230);
+                            margin-right: 10%;
+                        }
+                        a:nth-of-type(2){
+                            color:rgb(241, 38, 38);
+                        }
+                    }
+                }
+                tr:nth-child(odd){
+                    background-color: #ffffff21;
+                }
+
+            }
+        }
+    }
+
+    .formc{
+        @include flex_col();
+        width:100%;
+        height:fit-content;
+        margin-bottom: 30%;
+
+        form{
+            @include flex_col();
+            width:40%;
+            height: fit-content;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 15px;
+
+            h1{
+                margin-bottom: 5%;
+            }
+
+            div{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-end;
+                width:90%;
+                height: fit-content;
+                padding: 3px;
+
+                label{
+                    margin-bottom: 3%;  
+                    font-weight: 500;  
+                }
+    
+                input{
+                    margin-bottom: 7%;
+                }
+           
+                input[type="text"], input[type="email"]{
+                    padding: 2px 5px;
+                    width:100%;
+                    height: 35px;
+                    font-size: 16px;
+                    border: solid 1px rgb(207, 207, 207);
+        
+                }
+                input[type="text"]:focus, input[type="email"]:focus {
+                    border: solid 1px #47e654;
+                    outline: none;
+                }
+            }
+
+            
+
+            button{
+                all:unset;
+                background: linear-gradient(45deg, #66ff73, #99ffaa);
+                padding:10px;
+                border-radius: 5px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .pending{
+        width:95%;
+        height: fit-content;
+        padding: 10px 5px;
+        @include flex_row();
+        // background-color: #2b80ff;
+        margin-bottom: 30%;
+
+        form{
+            width:20%;
+            height:fit-content;
+            border-radius: 15px;
+            // border: solid 1px rgb(129, 129, 129);
+            @include flex_col();
+            padding: 5px;
+            background-color: #ffffff;
+            text-align: left;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+
+            img{
+                max-width: 50%;
+                height: auto;
+            }
+
+            div{
+                @include flex_row();
+                label{
+                    margin: 3%;
+                    font-weight: bolder;
+                }
+                input{
+                    width:90%;
+                    border:none;
+                    margin: 5% 0;
+                    padding-left: 5px;
+            }
+            
+            }
+
+            select{
+                width:100%;
+                height:25px;
+                margin: 5%;
+                background-color: transparent;
+            }
+            button{
+                all:unset;
+                background: linear-gradient(45deg, #66ff73, #99ffaa);
+                padding:10px;
+                border-radius: 5px;
+                font-weight: 600;
+            }
+
+        }
+    }
+}

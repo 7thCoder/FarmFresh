@@ -1,0 +1,107 @@
+@mixin flex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex_col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat ,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    @include flex_row();
+    width:70%;
+    height:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 15px;
+    background-color: aliceblue;
+
+    img{
+        width:40%;
+        height:auto;
+        align-self: flex-start;
+        margin: 1% 0 0 1%;
+    }
+
+    form{
+        @include flex_col();
+        width:60%;
+        height: 80%;
+
+        div{
+            width:100%;
+            @include flex_col();
+
+            label{
+                font-weight: 400;
+                margin-bottom: 1%;
+            } 
+
+            input{
+                width:70%;
+                height:45px;
+                border-radius: 5px;
+                background-color: transparent;
+                outline: none;
+                border:solid 1px rgb(187, 187, 187);
+                margin-bottom: 3%;
+                padding: 2px 10px;
+                font-size: 16px;
+            }
+
+            .inf{
+                border:none;
+                text-align: center;
+            }
+
+            input:focus{
+                outline:#1a9fdd;
+                border:solid 1px #1a9fdd;
+                box-shadow: 5px 5px 5px #1a9fddb9;
+            }
+
+            select{
+                width:70%;
+                height:45px;
+                border-radius: 5px;
+                border:solid 1px rgb(187, 187, 187);
+                margin-bottom: 3%;
+                padding: 2px 10px;
+                font-size: 16px;
+                background-color: transparent;
+
+                option{
+                    background-color: transparent;
+                }
+                
+            }
+
+        }
+
+        button{
+            all:unset;
+            background: linear-gradient(135deg, #3498db, #1e628f);
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-bottom: 5%;
+        }
+
+    }
+
+}

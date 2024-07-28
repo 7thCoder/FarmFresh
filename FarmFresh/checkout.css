@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+.main img {
+  width: 40%;
+  height: auto;
+  align-self: flex-start;
+  margin: 1% 0 0 1%;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 80%;
+}
+.main form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.main form div label {
+  font-weight: 400;
+  margin-bottom: 1%;
+}
+.main form div input {
+  width: 70%;
+  height: 45px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  border: solid 1px rgb(187, 187, 187);
+  margin-bottom: 3%;
+  padding: 2px 10px;
+  font-size: 16px;
+}
+.main form div .inf {
+  border: none;
+  text-align: center;
+}
+.main form div input:focus {
+  outline: #1a9fdd;
+  border: solid 1px #1a9fdd;
+  box-shadow: 5px 5px 5px rgba(26, 159, 221, 0.7254901961);
+}
+.main form div select {
+  width: 70%;
+  height: 45px;
+  border-radius: 5px;
+  border: solid 1px rgb(187, 187, 187);
+  margin-bottom: 3%;
+  padding: 2px 10px;
+  font-size: 16px;
+  background-color: transparent;
+}
+.main form div select option {
+  background-color: transparent;
+}
+.main form button {
+  all: unset;
+  background: linear-gradient(135deg, #3498db, #1e628f);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 5%;
+}
+
+/*# sourceMappingURL=checkout.css.map */
