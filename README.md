@@ -1,6 +1,7 @@
 # FarmFresh
 A multi vendor ecommerce website for agro-pastoral 
-#How to use
+
+# How to use
 - go to the db folder and import the database via phpmyAdmin
 - the system has one defualt admin ( username: admin, password: admin)
 - the admin login is found on farmfresh/adminlogin.php
