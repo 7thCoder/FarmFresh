@@ -29,7 +29,7 @@
                     header("Location:http://localhost/FarmFresh/FarmFresh/dashboardvendor/admin.php");
                 }
                 elseif($role == "admin"){
-                    header("Location:http://localhost/FarmFresh/FarmFresh/dashboard/admin.php");
+                    header("Location:http://localhost/FarmFresh/FarmFresh/dashboard/dashboard.php");
                 }
                 
             }    

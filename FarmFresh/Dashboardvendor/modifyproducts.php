@@ -1,4 +1,7 @@
 <?php
+ session_start();
+
+ $sellerId = $_SESSION['uid'];
  $conn = mysqli_connect('localhost','root','','farm') or die("unable to connect to db");
 
  $id = $_GET['showid'];
